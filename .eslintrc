@@ -1,0 +1,50 @@
+{
+ // I want to use babel-eslint for parsing!
+  "parser": "babel-eslint",
+
+  "env": {
+    "browser": true,
+    "node": true,
+    "mocha": true
+  },
+  "rules": {
+
+    ////////// Possible Errors //////////
+
+    "no-comma-dangle": 0,         // disallow trailing commas in object literals
+    // "comma-dangle": [1, "always-multiline"],
+    "no-console": 0,              // disallow use of console (off by default in the node environment)
+    "valid-jsdoc": 0,             // Ensure JSDoc comments are valid (off by default)
+
+    ////////// Stylistic Issues //////////
+
+    "eol-last": 0,                  // enforce newline at the end of file, with no multiple empty lines
+    "indent": [2, 2],               // how many spaces to use for indentation
+    "semi": 1,                      // require or disallow use of semicolons instead of ASI
+    "no-space-before-semi": 0,      // disallow space before semicolon
+    "array-bracket-spacing": 1,     // disallow space in array definition: after '[' and before ']'
+    "object-curly-spacing": 0,      // disallow space in object litteral definition: after '{' and before '}'
+    "no-multiple-empty-lines": 1,   // disallow multiple empty lines (off by default)
+
+    ////////// Strict Mode //////////
+
+    "global-strict": 0,         // (deprecated) require or disallow the "use strict" pragma in the global scope
+                                // (off by default in the node environment)
+    "no-extra-strict": 0,       // (deprecated) disallow unnecessary use of "use strict"; when already in strict mode
+    "strict": [2, "function"],  // controls location of Use Strict Directives
+
+    ////////// Variables //////////
+
+    "no-catch-shadow": 0,             // disallow the catch clause parameter name being the same as a variable in the outer scope
+                                      // (off by default in the node environment)
+    "no-delete-var": 0,               // disallow deletion of variables
+    "no-label-var": 0,                // disallow labels that share a name with a variable
+    "no-shadow": 0,                   // disallow declaration of variables already declared in the outer scope
+    "no-shadow-restricted-names": 0,  // disallow shadowing of names such as arguments
+    "no-undef": [2, { typeof: true }],// disallow use of undeclared variables unless mentioned in a /*global */ block
+    "no-undef-init": 0,               // disallow use of undefined when initializing variables
+    "no-undefined": 0,                // disallow use of undefined variable (off by default)
+    "no-unused-vars": 1,              // disallow declaration of variables that are not used in the code
+    "no-use-before-define": 0,        // disallow use of variables before they are defined
+  }
+}
