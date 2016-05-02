@@ -1,0 +1,23 @@
+/* cacher correctement avant l'initialisation */
+
+[ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak {
+    display: none;
+}
+
+/* http://blogs.infinitesquare.com/b/seb/archives/pourquoi-il-ne-faut-pas-utiliser-ngcloak#.VyJKPj_jaf4
+
+module.directive("deferredCloak", function () {
+  return {
+    restrict: 'A',
+    link: function (scope, element, attrs) {       
+      attrs.$set("deferredCloak", undefined);
+      element.removeClass("deferred-cloak");
+    }
+  };
+});
+
+[deferred-cloak], [data-deferred-cloak], [x-deferred-cloak], .deferred-cloak {
+    display: none;
+}
+
+*/

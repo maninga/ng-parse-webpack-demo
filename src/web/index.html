@@ -1,0 +1,38 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html ng-cloack class="no-js lt-ie9 lt-ie8 lt-ie7 ng-cloack" lang="fr"> <![endif]-->
+<!--[if IE 7]>         <html ng-cloack class="no-js lt-ie9 lt-ie8 ng-cloack" lang="fr"> <![endif]-->
+<!--[if IE 8]>         <html ng-cloack class="no-js lt-ie9 ng-cloack" lang="fr"> <![endif]-->
+<!--[if gt IE 8]><!--> <html ng-cloack class="no-js ng-cloack" lang="fr"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title ng-bind="$root.title">My Application - Index</title>
+  <link rel="shortcut icon" type="image/x-icon" href="/public/assets/img/favicon.ico" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet" type="text/css" />
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <!--[if lte IE 8]>
+  <p class="chromeframe">Vous utilisez un navigateur <strong>obsolète</strong>. Merci de <a href="http://browsehappy.com/">mettre à jour votre navigateur</a> ou <a href="http://www.google.com/chromeframe/?redirect=true">d'activer Google Chrome Frame</a> pour pouvoir naviguer sur ce site.</p>
+  <![endif]-->
+
+  <noscript>
+    Veuillez activer le javascript pour naviguer ce site :)
+  </noscript>  
+
+  <div ng-show="$root.isLoading">
+    Chargement des données en cours…
+  </div>
+
+  <p ng-show="!$root.isLoading">Rien à voir ici {{'pour l\'instant' + '!!!'}}</p>
+
+  <script src="main.js"></script>
+</body>
+</html>
